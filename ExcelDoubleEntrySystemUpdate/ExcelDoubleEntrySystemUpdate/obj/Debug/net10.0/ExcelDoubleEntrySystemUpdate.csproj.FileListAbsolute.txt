@@ -1,0 +1,14 @@
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\bin\Debug\net10.0\ExcelDoubleEntrySystemUpdate.exe
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\bin\Debug\net10.0\ExcelDoubleEntrySystemUpdate.deps.json
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\bin\Debug\net10.0\ExcelDoubleEntrySystemUpdate.runtimeconfig.json
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\bin\Debug\net10.0\ExcelDoubleEntrySystemUpdate.dll
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\bin\Debug\net10.0\ExcelDoubleEntrySystemUpdate.pdb
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ExcelDoubleEntrySystemUpdate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ExcelDoubleEntrySystemUpdate.AssemblyInfoInputs.cache
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ExcelDoubleEntrySystemUpdate.AssemblyInfo.cs
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ExcelDoubleEntrySystemUpdate.csproj.CoreCompileInputs.cache
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ExcelDoubleEntrySystemUpdate.dll
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\refint\ExcelDoubleEntrySystemUpdate.dll
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ExcelDoubleEntrySystemUpdate.pdb
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ExcelDoubleEntrySystemUpdate.genruntimeconfig.cache
+C:\Users\kaiho\OneDrive\DATA\Entwicklung\C#\ExcelDoubleEntrySystemUpdate\ExcelDoubleEntrySystemUpdate\obj\Debug\net10.0\ref\ExcelDoubleEntrySystemUpdate.dll
