@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExcelDoubleEntrySystemUpdate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54e2385544b75d72db8eeda0b799043dae690929")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2efa53ac8046a96d5e1a894d92567a9e561b1ca6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExcelDoubleEntrySystemUpdate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExcelDoubleEntrySystemUpdate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
