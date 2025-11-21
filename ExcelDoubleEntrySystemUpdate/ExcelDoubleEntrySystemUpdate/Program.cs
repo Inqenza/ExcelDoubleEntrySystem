@@ -1,66 +1,71 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
-using Octokit;
 
-public class GitHubUpdater
+namespace ExcelUpdater
 {
-    private readonly string owner = "Inqenza";
-    private readonly string repo = "ExcelDoubleEntrySystem";
-    private readonly string fileName = "ExcelDoubleEntrySystem.xlsm";
-    private readonly string localPath = AppDomain.CurrentDomain.BaseDirectory;
-
-    public async Task UpdateFileAsync()
+    internal class Program
     {
-        try
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Prüfe GitHub-Releases...");
+            Console.Title = "Excel Updater";
+            Console.WriteLine("Excel-Updater wird gestartet...\n");
 
-            var github = new GitHubClient(new ProductHeaderValue("MeinApp"));
-            var latestRelease = await github.Repository.Release.GetLatest(owner, repo);
+            var updater = new GitHubUpdater();
+            CancellationTokenSource cts = new CancellationTokenSource();
 
-            if (latestRelease.Assets.Count == 0)
+            // Ladebalken starten
+            var loading = Task.Run(() => ShowLoadingBar(cts.Token));
+
+            bool success = await updater.UpdateFileAsync();
+
+            // Ladebalken stoppen
+            cts.Cancel();
+            await Task.Delay(200);
+
+            Console.WriteLine("\n");
+
+            if (success)
             {
-                Console.WriteLine("Keine Dateien im Release gefunden.");
-                return;
+                Console.WriteLine("Update erfolgreich abgeschlossen.");
+            }
+            else
+            {
+                Console.WriteLine("Kein Update installiert (kein Release oder aktuellste Version).");
             }
 
-            var asset = latestRelease.Assets[0]; // Annahme: erster Asset
-            var downloadUrl = asset.BrowserDownloadUrl;
+            // Excel-Datei IMMER öffnen
+            string excelPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ExcelDoubleEntrySystem.xlsm");
 
-            Console.WriteLine($"Lade Datei herunter: {asset.Name}");
-
-            using (var client = new System.Net.Http.HttpClient())
+            if (File.Exists(excelPath))
             {
-                var content = await client.GetByteArrayAsync(downloadUrl);
-                var finalPath = Path.Combine(localPath, fileName);
-
-                await File.WriteAllBytesAsync(finalPath, content);
+                Console.WriteLine("Update abgeschlossen.");
+                Console.WriteLine("\nDrücken Sie eine Taste, um 'ExcelDoubleEntrySystem.xlsm' zu öffnen.");
+                Console.ReadKey();
+                Process.Start(new ProcessStartInfo(excelPath) { UseShellExecute = true });
             }
-
-            Console.WriteLine("Datei wurde erfolgreich aktualisiert.");
+            else
+            {
+                Console.WriteLine("Die Excel-Datei wurde nicht gefunden: " + excelPath);
+            }  
         }
-        catch (Exception ex)
+
+        static void ShowLoadingBar(CancellationToken token)
         {
-            Console.WriteLine("Fehler beim Update:");
-            Console.WriteLine(ex.Message);
+            int max = 30;
+            while (!token.IsCancellationRequested)
+            {
+                for (int i = 0; i <= max; i++)
+                {
+                    if (token.IsCancellationRequested)
+                        return;
+
+                    Console.Write("\rLade: [" + new string('#', i) + new string('-', max - i) + "]");
+                    Thread.Sleep(50);
+                }
+            }
         }
-    }
-}
-
-public class Program
-{
-    public static async Task Main(string[] args)
-    {
-        Console.WriteLine("Updater gestartet...");
-
-        var updater = new GitHubUpdater();
-
-        await updater.UpdateFileAsync();
-
-        Console.WriteLine("Vorgang abgeschlossen. Taste drücken zum Beenden.");
-        Console.ReadKey();
     }
 }

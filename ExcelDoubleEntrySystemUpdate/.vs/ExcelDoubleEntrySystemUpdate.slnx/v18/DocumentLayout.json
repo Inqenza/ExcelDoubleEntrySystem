@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2BC587C6-8FD7-A0CA-4A5E-7634C400E7B5}|ExcelDoubleEntrySystemUpdate\\ExcelDoubleEntrySystemUpdate.csproj|c:\\users\\kaiho\\onedrive\\data\\entwicklung\\excel\\exceldoubleentrysystem\\exceldoubleentrysystemupdate\\exceldoubleentrysystemupdate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BC587C6-8FD7-A0CA-4A5E-7634C400E7B5}|ExcelDoubleEntrySystemUpdate\\ExcelDoubleEntrySystemUpdate.csproj|solutionrelative:exceldoubleentrysystemupdate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC587C6-8FD7-A0CA-4A5E-7634C400E7B5}|ExcelDoubleEntrySystemUpdate\\ExcelDoubleEntrySystemUpdate.csproj|c:\\users\\kaiho\\onedrive\\data\\entwicklung\\excel\\exceldoubleentrysystem\\exceldoubleentrysystemupdate\\exceldoubleentrysystemupdate\\githubupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC587C6-8FD7-A0CA-4A5E-7634C400E7B5}|ExcelDoubleEntrySystemUpdate\\ExcelDoubleEntrySystemUpdate.csproj|solutionrelative:exceldoubleentrysystemupdate\\githubupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GitHubUpdater.cs",
+              "DocumentMoniker": "C:\\Users\\kaiho\\OneDrive\\DATA\\Entwicklung\\Excel\\ExcelDoubleEntrySystem\\ExcelDoubleEntrySystemUpdate\\ExcelDoubleEntrySystemUpdate\\GitHubUpdater.cs",
+              "RelativeDocumentMoniker": "ExcelDoubleEntrySystemUpdate\\GitHubUpdater.cs",
+              "ToolTip": "C:\\Users\\kaiho\\OneDrive\\DATA\\Entwicklung\\Excel\\ExcelDoubleEntrySystem\\ExcelDoubleEntrySystemUpdate\\ExcelDoubleEntrySystemUpdate\\GitHubUpdater.cs",
+              "RelativeToolTip": "ExcelDoubleEntrySystemUpdate\\GitHubUpdater.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T13:28:45.553Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "ExcelDoubleEntrySystemUpdate\\Program.cs",
               "ToolTip": "C:\\Users\\kaiho\\OneDrive\\DATA\\Entwicklung\\Excel\\ExcelDoubleEntrySystem\\ExcelDoubleEntrySystemUpdate\\ExcelDoubleEntrySystemUpdate\\Program.cs",
               "RelativeToolTip": "ExcelDoubleEntrySystemUpdate\\Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwEEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T06:39:49.289Z",
               "EditorCaption": ""
